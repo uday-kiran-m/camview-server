@@ -1,0 +1,33 @@
+*{
+    margin: 5px;
+    padding:0px;
+}
+form {
+    text-align:center ;
+    margin: 10px auto;
+
+}
+button{
+    border-radius: 5px;
+    width: 70px;
+    text-decoration: none;
+}
+#abc{
+    text-align:center ;
+    margin: auto;
+    width: 310px;
+    overflow: hidden;
+}
+input {
+    padding-left: 15px;
+    letter-spacing: 42px;
+    border: 0;
+    background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 50px 1px;
+    background-repeat: repeat-x;
+    background-position-x: 35px;
+    width: 300px;
+    outline: none;
+    position:relative;
+}

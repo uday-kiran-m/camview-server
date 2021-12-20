@@ -1,0 +1,90 @@
+{% extends 'adminpanel/base.html' %}
+{% block heading %}
+Dashboard
+{% endblock heading %}
+{% block dashcontent %}
+<div class="content">
+<h3> Devices </h3>
+<table>
+<tr>
+    <th>Device</th>
+    <th>Status</th>
+    <th>Note</th>
+</tr>
+{% for i in devices %}
+<tr>
+    <td>{{i.name}}</td>
+    {% if i.status%}
+    <td>online<span class = "dotgreen"></span></td>
+    {%else%}
+    <td>offline<span class = "dotred"></span></td>
+    {% endif %}
+    <td>{{i.note}}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+<div class="content">
+<h3> Devices </h3>
+<table>
+<tr>
+    <th>Device</th>
+    <th>Status</th>
+    <th>Note</th>
+</tr>
+{% for i in devices %}
+<tr>
+    <td>{{i.name}}</td>
+    {% if i.status%}
+    <td>online<span class = "dotgreen"></span></td>
+    {%else%}
+    <td>offline<span class = "dotred"></span></td>
+    {% endif %}
+    <td>{{i.note}}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+<div class="content">
+<h3> Devices </h3>
+<table>
+<tr>
+    <th>Device</th>
+    <th>Status</th>
+    <th>Note</th>
+</tr>
+{% for i in devices %}
+<tr>
+    <td>{{i.name}}</td>
+    {% if i.status%}
+    <td>online<span class = "dotgreen"></span></td>
+    {%else%}
+    <td>offline<span class = "dotred"></span></td>
+    {% endif %}
+    <td>{{i.note}}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+<div class="content">
+<h3> Devices </h3>
+<table>
+<tr>
+    <th>Device</th>
+    <th>Status</th>
+    <th>Note</th>
+</tr>
+{% for i in devices %}
+<tr>
+    <td>{{i.name}}</td>
+    {% if i.status%}
+    <td>online<span class = "dotgreen"></span></td>
+    {%else%}
+    <td>offline<span class = "dotred"></span></td>
+    {% endif %}
+    <td>{{i.note}}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+{% endblock dashcontent %}
