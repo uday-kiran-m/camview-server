@@ -1,33 +1,119 @@
+
 *{
     margin: 5px;
     padding:0px;
+	font-family: 'Raleway', sans-serif;
+    /* transition-duration: 0.4s; */
 }
 form {
     text-align:center ;
     margin: 10px auto;
 
 }
-button{
-    border-radius: 5px;
-    width: 70px;
-    text-decoration: none;
+.buttonl{
+    background-color: #b8b8ce;
+    padding: 5px 3px;
+    font-size: 18px;
+    color:black;
+    border:none
 }
+.buttond{
+    background-color: #303050;
+    padding: 5px 3px;
+    font-size: 18px;
+    border:none;
+    color: white;
+}
+.bodyd{
+    background-color: #0f0f1a;
+    color: white;
+}
+.bodyl{
+    background-color:cornsilk;
+    color: black;
+}
+
+.inputl{
+		width: 30px;
+		height: 50px;
+		background-color: #b6b6e5;
+		border: none;
+        border-radius: 5px;
+		line-height: 50px;
+		text-align: center;
+		font-size: 24px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 200;
+		color:black;
+		margin: 0 2px;
+
+}
+.inputd{
+    width: 30px;
+    height: 50px;
+    background-color: #18182a;
+    border: none;
+    border-radius: 5px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    color:white;
+    margin: 0 2px;
+
+}
+.splitterd {
+    padding: 0 5px;
+    color: white;
+    font-size: 24px;
+    transition: none;
+}
+.splitterl{
+    padding: 0 5px;
+    color: black;
+    font-size: 24px;
+    transition: none;
+}
+
+.prompt {
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: white;
+}
+
 #abc{
     text-align:center ;
     margin: auto;
     width: 310px;
     overflow: hidden;
 }
-input {
-    padding-left: 15px;
-    letter-spacing: 42px;
-    border: 0;
-    background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
-    background-position: bottom;
-    background-size: 50px 1px;
-    background-repeat: repeat-x;
-    background-position-x: 35px;
-    width: 300px;
-    outline: none;
-    position:relative;
+.imgf {
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: 0px;
+    background-color: black;
+    text-align: center;
+}
+.img1f {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    width: 100vw;
+    margin: auto;
+    max-height: 100vh;
+}
+.img{
+    text-align: center;
+}
+.img1{
+    max-width:100%;
+    height:auto;
+    vertical-align: middle;
 }

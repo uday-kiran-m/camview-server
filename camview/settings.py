@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'camview.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'camview',
-        'USER': 'cam',
-        'PASSWORD': 'C@mview123',
+        'NAME': 'Camview',
+        'USER': 'camview',
+        'PASSWORD': 'Camview@123',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
     }

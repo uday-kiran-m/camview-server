@@ -10,19 +10,27 @@
     <link href="{%static 'camweb/static/index.css'%}" rel="stylesheet">
 </head>
 
-<body>
-    <h1>CamView</h1>
+<body class={{"body"|add:mode}}>
+    <h1 onclick="toggleweb()">CamView</h1>
+    <!-- <button id='toggle' onclick="toggleweb()">Theme switcher</button> -->
     <div id="abc">
-    <form method='POST'>
-        {{forms}}
+    <form id ='form' onsubmit=form() class="forml" autocomplete="off" autosubmit="false" method="post">
         {% csrf_token %}
-
-        <button type="submit">submit</button>
-        <p>Enter 6 digit code</p>
+        <input name="code" id="code" type="hidden"/>
+        <input type="text" id="d1" maxlength="1" onkeyup= "movecurs(this,'1')" placeholder="0" class={{"input"|add:mode}} onfocus="setcurs('0')"/>
+	    <input type="text" id="d2" maxlength="1" onkeyup= "movecurs(this,'2')" placeholder="0" class={{"input"|add:mode}} onfocus="setcurs('1')"/>
+	    <input type="text" id="d3" maxlength="1" onkeyup= "movecurs(this,'3')" placeholder="0" class={{"input"|add:mode}} onfocus="setcurs('2')"/>
+	    <span class={{"splitter"|add:mode}}>&ndash;</span>
+	    <input type="text" id="d4" maxlength="1" onkeyup= "movecurs(this,'4')" placeholder="0" class={{"input"|add:mode}} onfocus="setcurs('3')"/>
+	    <input type="text" id="d5" maxlength="1" onkeyup= "movecurs(this,'5')" placeholder="0" class={{"input"|add:mode}} onfocus="setcurs('4')"/>
+	    <input type="text" id="d6" maxlength="1" onkeyup= "movecurs(this,'6')" placeholder="0" class={{"input"|add:mode}} onfocus="setcurs('5')"/>
+        <button class={{"button"|add:mode}} onclick="submitform()">Submit</button>
     </form>
     </div>
     {%if valid%}
-    <img src="/video" width="80%">
+    <div id="img" class="img" onclick=imgchange() >
+    <img id="img1" class="img1" src="/video" >
+    </div>
     {% endif %}
 </body>
 <script src="{%static 'camweb/static/index.js'%}">
